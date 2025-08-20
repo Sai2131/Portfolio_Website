@@ -1,0 +1,23 @@
+.project-card{
+  display: flex;   
+  width: 80%; 
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 16px;
+}
+
+.project-card-name{
+    color: azure;
+}
+.project-card-desc{
+    color: azure;
+}
+
+.project-card-image{
+  flex: 0 0 256px;        
+  max-width: 25vw;
+  aspect-ratio: 1 / 1;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 6px;
+  background: rgba(63, 50, 202, 0.05);
+  overflow: hidden;
+}
