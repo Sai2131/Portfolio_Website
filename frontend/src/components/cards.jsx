@@ -17,12 +17,15 @@ export function ProjectCard({image, name, desc}) {
 export function ExperienceCard({image, name, desc}) {
   return (
     <div className="card">
-    <div className="card-text">
-        <h1 className="card-name">{name}</h1>
-        <p className="card-desc">{desc}</p>
-    </div>
 
     <img src={image} alt={"Company Logo"} className="experience-image card-image"/>
+
+    <div className="card-text">
+        <h1 className="card-name">{name}</h1>
+        <div className="card-desc">{desc}</div>
+    </div>
+
+    
     
     </div>
   )

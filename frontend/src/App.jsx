@@ -1,6 +1,11 @@
 import './App.css'
 import {ProjectPanel, AboutmePanel, LanguagesPanel, ExperiencePanel} from './components/panels'
 
+
+const LinkedInURL = import.meta.env.VITE_LINKEDINURL
+const email = import.meta.env.VITE_EMAIL
+const phone = import.meta.env.VITE_PHONE
+
 function App() {
 
   return (
@@ -8,9 +13,9 @@ function App() {
       <div className="namecard">
         <h1>Sai Tarra</h1>
         <div className="links">
-        <h5>LinkedIn</h5>
-        <h5>email</h5>
-        <h5>Phone</h5>
+        <a href={LinkedInURL}>LinkedIn</a>
+        <a href={`mailto:${email}`}>{email}</a>
+        <a href={`tel:+1${phone.replace("()-+", "")}`}>{phone}</a>
       </div>
       </div>
 

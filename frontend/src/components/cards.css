@@ -2,6 +2,20 @@
 .card-text{
   color: azure;
   font-family: "Lucida Console", "Monaco", monospace;
+  font-size: 0.9rem;
+}
+
+.card-desc{
+  text-align: left;
+  
+}
+
+.card-desc ul {
+  margin-left: 25px;
+}
+
+.card-desc li {
+  margin-top: 10px;
 }
 
 .card {
@@ -17,7 +31,8 @@
   align-items: flex-start;
 }
 
-.card-image{      
+.card-image{ 
+  min-width: 15vw;
   max-width: 25vw;
   aspect-ratio: 1 / 1;
   border: 1px solid rgba(255, 255, 255, 0.6);
@@ -31,6 +46,9 @@
 }
 
 .experience-image{
-  flex: 0 0 512px;  
-  aspect-ratio: 1 / 0.25;
+  min-width: 15vw;
+  max-width: 25vw; 
+  min-height: 15vw;
+  max-height: 25vw;
+  aspect-ratio: 1 / 1;
 }
