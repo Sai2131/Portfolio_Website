@@ -3,21 +3,37 @@
     font-family: "Lucida Console", "Monaco", monospace;
     font-size: 1.3rem;
     color: rgb(200, 200, 200);
+    padding: 30px;
 }
 
-.projectpanel{
-  margin: auto;
-  width: 50%;
-  border: 3px solid rgb(254, 254, 254);
-  padding: 10px;
+.footer{
+  text-align: center;
+  color: rgb(200, 200, 200);
+  padding: 20px;
+}
 
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 12px;
+.links {
+  display: flex;
+  justify-content: center;  
+  gap: 20px;      
+  padding: 15px;    
+}
 
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+.links h5 {
+  margin: 0;          
+  color: white;
+}
 
-  color: rgb(230, 230, 230);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+.panel-layout{
+  display: flex;
+  flex-direction: column;
+  gap: 30px; 
+  padding:0 200px;
+  justify-content: center; 
+}
+
+.panel-layout-inner{
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
 }
