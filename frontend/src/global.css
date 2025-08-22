@@ -1,0 +1,30 @@
+.blur{
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+}
+
+.blur .accordion-item,
+.blur .accordion-header,
+.blur .accordion-button,
+.blur .accordion-body {
+  background: transparent !important;
+  border: none !important;
+  color: white !important;
+}
+
+.blur .accordion-button::after {
+  filter: invert(1);
+}
+
+.fixed-box {
+  height: 200px;
+  overflow-y: auto;
+}
+
+.fixed-height{
+    min-height: 300px;
+}
