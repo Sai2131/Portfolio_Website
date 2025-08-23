@@ -20,11 +20,13 @@
   filter: invert(1);
 }
 
-.fixed-box {
-  height: 200px;
-  overflow-y: auto;
+.equal-height {
+  display: flex;
+  flex: 1;
 }
 
-.fixed-height{
-    min-height: 300px;
+.equal-height .blur {
+  flex: 1;
+  display: flex;    
+  flex-direction: column;
 }

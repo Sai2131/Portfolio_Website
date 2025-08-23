@@ -1,17 +1,24 @@
 import Accordion from 'react-bootstrap/Accordion';
+import { useState } from 'react';
 import '../global.css'
 
 export function Education() {
 
+  const [activeKey, setActiveKey] = useState("0");
+  const handleSelect = (eventKey) => {
+    if (eventKey === null) return;
+    setActiveKey(eventKey);
+  };
+
   return ( 
-    <div className="text-center fs-4 w-80 mt-5 text-light border border border-5 border-dark rounded blur">
+    <div className="text-center fs-8 w-80 mt-5 text-light border border border-5 border-dark rounded blur">
 
         <h3>Education </h3>
 
-        <Accordion defaultActiveKey="0" className="fixed-height">
+        <Accordion activeKey={activeKey} onSelect={handleSelect}>
         <Accordion.Item eventKey="0">
             <Accordion.Header>Accordion Item #1</Accordion.Header>
-            <Accordion.Body className='fixed-box'>
+            <Accordion.Body>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -23,7 +30,7 @@ export function Education() {
         </Accordion.Item>
         <Accordion.Item eventKey="1">
             <Accordion.Header>Accordion Item #2</Accordion.Header>
-            <Accordion.Body className='fixed-box'>
+            <Accordion.Body>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim veniam, quis nostrud exercitation ullamco laboris nisi ut
