@@ -7,7 +7,7 @@ export function Header() {
   return (
     <>
       <div className="text-center fs-5 text-white">
-        <h1>Sai Tarra</h1>
+        <h1 className="mt-3">Sai Tarra</h1>
         <div className="d-flex justify-content-center gap-3 fst-italic">
         <a className="text-decoration-none" href={LinkedInURL}>LinkedIn</a>
         <a className="text-decoration-none" href={`mailto:${email}`}>{email}</a>

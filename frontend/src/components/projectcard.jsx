@@ -1,7 +1,11 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { useNavigate } from 'react-router-dom';
 
-export function ProjectCard({Title, Desc, Img}) {
+export function ProjectCard({Title, Desc, Img, Page}) {
+
+  const navigate = useNavigate();
+
   return (
     <Card style={{ width: '18rem' }} className='blur bg-dark text-light'>
       <Card.Img variant="top" src="holder.js/100px180" />
@@ -10,7 +14,7 @@ export function ProjectCard({Title, Desc, Img}) {
         <Card.Text>
             {Desc}
         </Card.Text>
-        <Button variant="primary">More Info</Button>
+        <Button variant="primary" onClick={() => navigate(Page)}>More Info</Button>
       </Card.Body>
     </Card>
   );
