@@ -5,10 +5,12 @@ import { Education } from './components/Education.jsx'
 import { Experience } from './components/Experience.jsx'
 import { ProjectCard } from './components/projectcard.jsx'
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
+
+import compilerIcon from './assets/compilerIcon.png'
+import distributedIcon from './assets/DistributedIcon.png'
 
 
 function Homepage() {
@@ -33,25 +35,25 @@ function Homepage() {
                     <h2 className='text-center' >Projects</h2>
                     <Row className='mb-4 mt-4'>
                         <Col className="d-flex justify-content-center">
-                            <ProjectCard Title={"Project 1"} Desc={"This is the desc of the proj"} Page={"/compiler"} />
+                            <ProjectCard Title={"IR Code Generator / Compiler"} Desc={"Compiles a subset of the C language into IR (A form of code similar to assembly)"} Page={"/compiler"} Img={compilerIcon}/>
                         </Col>
                         <Col className="d-flex justify-content-center">
-                            <ProjectCard Title={"Project 1"} Desc={"This is the desc of the proj"} />
+                            <ProjectCard Title={"Distributed Key Value Store"} Desc={"Stores Key Value pairs in a distributed network of nodes for better fault tolerance, avaliability and throughput"} Page={"/kvs"} Img={distributedIcon} />
                         </Col>
                         <Col className="d-flex justify-content-center">
-                            <ProjectCard Title={"Project 1"} Desc={"This is the desc of the proj"} />
+                            <ProjectCard Title={"Chaptre"} Desc={"A platform to share stories in incremental chapters for people to read and give feedback."} Page={"/kvs"} Img={distributedIcon} />
                         </Col>
                     </Row>
 
                     <Row className='mb-4 mt-4'>
                         <Col className="d-flex justify-content-center">
-                            <ProjectCard Title={"Project 1"} Desc={"This is the desc of the proj"} />
+                            <ProjectCard Title={"HTTP Webserver"} Desc={"A Multithreaded HTTP 1.1 Webserver made with pthreads and unix sockets"} Page={"/httpserver"} Img={distributedIcon} />
                         </Col>
                         <Col className="d-flex justify-content-center">
-                            <ProjectCard Title={"Project 1"} Desc={"This is the desc of the proj"} />
+                            <ProjectCard Title={"cRegex"} Desc={"Regular expression library for C designed to be easy to use."} Page={"/regexengine"} Img={distributedIcon}/>
                         </Col>
                         <Col className="d-flex justify-content-center">
-                            <ProjectCard Title={"Project 1"} Desc={"This is the desc of the proj"} />
+                            <ProjectCard Title={"Game Emulator"} Desc={"Emulator made for a virtual game console called the Banana Slug"} Img={distributedIcon} Page={"/emulator"}/>
                         </Col>
                     </Row>
                 </div>

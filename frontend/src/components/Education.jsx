@@ -27,7 +27,7 @@ export function Education() {
               Started my Computer Science degree in Fall 2022 and currently a senior. Some of my favorite courses I took were:
               <br></br>
               <ul>
-                <li> Distributed Systems (134) </li>
+                <li> Distributed Systems (138) </li>
                 <li> Compilers (110A) </li>
                 <li> Computer Architechure (120) </li>
                 <li> System Design (130) </li>
