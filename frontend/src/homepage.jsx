@@ -41,7 +41,7 @@ function Homepage() {
                             <ProjectCard Title={"Distributed Key Value Store"} Desc={"Stores Key Value pairs in a distributed network of nodes for better fault tolerance, avaliability and throughput"} Page={"/kvs"} Img={distributedIcon} />
                         </Col>
                         <Col className="d-flex justify-content-center">
-                            <ProjectCard Title={"Chaptre"} Desc={"A platform to share stories in incremental chapters for people to read and give feedback."} Page={"/kvs"} Img={distributedIcon} />
+                            <ProjectCard Title={"Chaptre"} Desc={"A platform to share stories in incremental chapters for people to read and give feedback."} Page={"/chaptre"} Img={distributedIcon} />
                         </Col>
                     </Row>
 

@@ -30,3 +30,12 @@
   display: flex;    
   flex-direction: column;
 }
+
+.project-card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
