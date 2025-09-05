@@ -5,13 +5,16 @@ import { Education } from './components/Education.jsx'
 import { Experience } from './components/Experience.jsx'
 import { ProjectCard } from './components/projectcard.jsx'
 
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row'
+import Container from 'react-bootstrap/Container'
 
-import compilerIcon from './assets/compilerIcon.png'
+import compilerIcon from './assets/CompilerCover.jpeg'
 import distributedIcon from './assets/DistributedIcon.png'
-
+import chaptreIcon from './assets/ChaptreLogo.png'
+import serverIcon from './assets/HTTPserverIcon.png'
+import cRegexIcon from './assets/cRegexIcon.png'
+import EmulatorIcon from './assets/EmulatorIcon.png'
 
 function Homepage() {
 
@@ -41,19 +44,19 @@ function Homepage() {
                             <ProjectCard Title={"Distributed Key Value Store"} Desc={"Stores Key Value pairs in a distributed network of nodes for better fault tolerance, avaliability and throughput"} Page={"/kvs"} Img={distributedIcon} />
                         </Col>
                         <Col className="d-flex justify-content-center">
-                            <ProjectCard Title={"Chaptre"} Desc={"A platform to share stories in incremental chapters for people to read and give feedback."} Page={"/chaptre"} Img={distributedIcon} />
+                            <ProjectCard Title={"Chaptre"} Desc={"A platform to share stories in incremental chapters for people to read and give feedback."} Page={"/chaptre"} Img={chaptreIcon} />
                         </Col>
                     </Row>
 
                     <Row className='mb-4 mt-4'>
                         <Col className="d-flex justify-content-center">
-                            <ProjectCard Title={"HTTP Webserver"} Desc={"A Multithreaded HTTP 1.1 Webserver made with pthreads and unix sockets"} Page={"/httpserver"} Img={distributedIcon} />
+                            <ProjectCard Title={"HTTP Webserver"} Desc={"A Multithreaded HTTP 1.1 Webserver made with pthreads and unix sockets"} Page={"/httpserver"} Img={serverIcon} />
                         </Col>
                         <Col className="d-flex justify-content-center">
-                            <ProjectCard Title={"cRegex"} Desc={"Regular expression library for C designed to be easy to use."} Page={"/regexengine"} Img={distributedIcon}/>
+                            <ProjectCard Title={"cRegex"} Desc={"Regular expression library for C designed to be easy to use."} Page={"/regexengine"} Img={cRegexIcon}/>
                         </Col>
                         <Col className="d-flex justify-content-center">
-                            <ProjectCard Title={"Game Emulator"} Desc={"Emulator made for a virtual game console called the Banana Slug"} Img={distributedIcon} Page={"/emulator"}/>
+                            <ProjectCard Title={"Game Emulator"} Desc={"Emulator made for a virtual game console called the Banana Slug"} Img={EmulatorIcon} Page={"/emulator"}/>
                         </Col>
                     </Row>
                 </div>
