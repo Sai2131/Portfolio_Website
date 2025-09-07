@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-    <Router>
+    <Router basename="/Portfolio_Website">
       <Routes>
         <Route index element={<Suspense fallback={<>Loading homepage...</>}> <Homepage/></Suspense>}/>
         <Route path="compiler" element={ <Suspense fallback={<>Loading project ...</>}> <Compiler/> </Suspense>}/>
