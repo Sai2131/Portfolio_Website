@@ -1,14 +1,35 @@
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import Carousel from 'react-bootstrap/Carousel';
 import Container from 'react-bootstrap/Container';
-import CompilerDiagram from '../assets/CompilerDiagram.jpeg'
+import ChaptreHomepage from '../assets/ChaptreHomepage.png'
+import Chaptre2 from '../assets/Chaptre-2.png'
+import Chaptre3 from '../assets/Chaptre-3.png'
+
 function Chaptre() {
 
   return ( 
-      <Container className='text-light mt-5'>
-        <Row>
-          <Col>
+      <Container className='text-light mt-5 mb-5'>
             <h1>Chaptre</h1>
+            
+            <Carousel className='mb-3 mt-3'>
+            <Carousel.Item>
+              <div className="carousel-image-container">
+                <img src={ChaptreHomepage} alt="Homepage" />
+              </div>
+            </Carousel.Item>
+
+            <Carousel.Item>
+              <div className="carousel-image-container">
+                <img src={Chaptre2} alt="Homepage" />
+              </div>
+            </Carousel.Item>
+
+            <Carousel.Item>
+              <div className="carousel-image-container">
+                <img src={Chaptre3} alt="Homepage" />
+              </div>
+            </Carousel.Item>
+          </Carousel>
+
             <p1>
               <b>Chaptre</b> is a collaborative website for authors and readers. The platform allows
               users to create profiles, write and publish books, and explore a library of stories.
@@ -40,12 +61,8 @@ function Chaptre() {
               The project was built collaboratively and showcases a full-stack web application
               integrating real-time writing, publishing, and reading features.
             </p1>
-          </Col>
-
-            <Col>
-                <img src={CompilerDiagram} alt="Compiler Diagram" className='ratio ratio-1x1 w-100 border border border-5 border-dark'/> 
-            </Col>
-        </Row>
+          
+      
       </Container>
   )
 }

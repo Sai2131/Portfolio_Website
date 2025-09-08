@@ -1,14 +1,21 @@
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
-import CompilerDiagram from '../assets/CompilerDiagram.jpeg'
+import webservedemo from '../assets/Webserver-demo.mp4'
 function Server() {
 
   return ( 
-      <Container className='text-light mt-5'>
-        <Row>
-        <Col>
+      <Container className='text-light mt-5'> 
           <h1>Multi-Threaded HTTP Server in C</h1>
+
+                          <video
+                    src={webservedemo}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-100 border border-5 border-dark mt-3 mb-4"
+                />
+
+          <div className='mb-5'>
           <p1>
             I implemented a resilient, standards-compliant HTTP server in C with support for both
             single-threaded and multi-threaded execution. The project focused on low-level system
@@ -61,12 +68,7 @@ function Server() {
             The server can run indefinitely, handle malformed inputs gracefully, and scale to serve multiple
             concurrent clients while maintaining correct semantics.
           </p1>
-        </Col>
-
-            <Col>
-                <img src={CompilerDiagram} alt="Compiler Diagram" className='ratio ratio-1x1 w-100 border border border-5 border-dark'/> 
-            </Col>
-        </Row>
+          </div>
       </Container>
   )
 }

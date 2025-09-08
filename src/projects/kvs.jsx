@@ -1,7 +1,7 @@
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
-import CompilerDiagram from '../assets/CompilerDiagram.jpeg'
+import kvsdiag from '../assets/kvsdiag.jpg'
 function KVSProject() {
 
   return ( 
@@ -66,7 +66,7 @@ function KVSProject() {
               </Col>
             </Col>
             <Col>
-                <img src={CompilerDiagram} alt="Compiler Diagram" className='ratio ratio-1x1 w-100 border border border-5 border-dark'/> 
+                <img src={kvsdiag} alt="KVS Diagram" className='ratio ratio-1x1 w-100 border border border-5 border-dark'/> 
             </Col>
         </Row>
       </Container>

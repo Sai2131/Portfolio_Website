@@ -1,7 +1,7 @@
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
-import CompilerDiagram from '../assets/CompilerDiagram.jpeg'
+import RegexDiag from '../assets/RegexDiag.1.jpeg'
 
 function Regexengine() {
 
@@ -46,7 +46,7 @@ function Regexengine() {
             </p1>
           </Col>
             <Col>
-                <img src={CompilerDiagram} alt="Compiler Diagram" className='ratio ratio-1x1 w-100 border border border-5 border-dark'/> 
+                <img src={RegexDiag} alt="Regex Diagram" className='ratio ratio-1x1 w-100 border border border-5 border-dark'/> 
             </Col>
         </Row>
       </Container>

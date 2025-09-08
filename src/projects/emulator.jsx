@@ -1,7 +1,7 @@
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
-import CompilerDiagram from '../assets/CompilerDiagram.jpeg'
+import Gameplay from '../assets/emulatorgameplay.gif'
 function Emulator() {
 
   return ( 
@@ -53,7 +53,7 @@ function Emulator() {
           </Col>
 
             <Col>
-                <img src={CompilerDiagram} alt="Compiler Diagram" className='ratio ratio-1x1 w-100 border border border-5 border-dark'/> 
+                <img src={Gameplay} alt="Gameplay GIF" className='ratio ratio-1x1 w-100 border border border-5 border-dark'/> 
             </Col>
         </Row>
       </Container>
