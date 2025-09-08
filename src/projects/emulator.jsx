@@ -10,43 +10,41 @@ function Emulator() {
           <Col>
             <h1>BananaSlug Emulator</h1>
             <p1>
-              I implemented a virtual console emulator in <b>C++</b> that simulates a custom hardware stack
-              including a CPU, GPU, memory, and controller input. The emulator reads a custom ROM format
-              (.slug) and executes the game logic in a 60 FPS loop.
+              I implemented a virtual console emulator in <b>C++</b> that simulates a custom hardware stack and executes the game logic in a 60 FPS loop. 
               <br></br>
               <br></br>
-              System Features:
+              The gameplay on the right is one of the flappy bird ROM files.
+              <br></br>
+              <br></br>
+              System layout:
               <ul>
                 <li>
-                  <b>Custom CPU:</b> Implemented a RISC-style CPU supporting arithmetic, branching,
-                  load/store, and I-/R-type instructions with proper program counter and stack handling.
+                  <b>CPU:</b> Implemented a RISC style CPU supporting arithmetic, branching,
+                  load/store, and I/R type instructions with proper program counter and stack handling.
                 </li>
                 <li>
-                  <b>Memory Model:</b> Includes address-mapped I/O, ROM loading, data sections, and
-                  memory safety checks for readable/writeable addresses.
+                  <b>Memory Model:</b> Includes memory mapped I/O, ROM loading, data sections, and
+                  memory safety checks for readable and writeable addresses.
                 </li>
                 <li>
-                  <b>GPU Rendering:</b> Used SDL to render a 64x64 pixel display at 60 FPS with proper
+                  <b>GPU Rendering:</b> Used <code>SDL</code> to render a 64x64 pixel display at 60 FPS with proper
                   texture and frame buffer management.
                 </li>
                 <li>
                   <b>Controller Input:</b> Keyboard mapped to controller buttons; integrated into the
-                  event loop with real-time input handling.
+                  event loop with real time input handling.
                 </li>
                 <li>
-                  <b>ROM Validation & Loading:</b> SLUG files are checked for correct headers, and
+                  <b>ROM Validation and Loading:</b> SLUG files are checked for correct headers, and
                   program/data sections are loaded into memory for execution.
                 </li>
                 <li>
                   <b>Game Loop:</b> Main loop handles CPU execution, GPU rendering, and input events,
-                  maintaining a consistent frame rate and proper termination conditions.
+                  maintaining a consistent 60 FPS frame rate.
                 </li>
                 <li>
-                  <b>CI/CD & Build:</b> Built with CMake and continuously integrated via GitHub Actions
+                  <b>CI/CD and Build:</b> Built with <code>CMake</code> and continuously integrated via <code>GitHub Actions </code>
                   for automated compilation and testing.
-                </li>
-                <li>
-                  <b>Testing:</b> Verified correctness using hand-written ROM files simulating game logic.
                 </li>
               </ul>
             </p1>

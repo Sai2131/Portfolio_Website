@@ -9,7 +9,7 @@ export function AboutMe() {
           backend development, distributed systems, operating systems, compilers, and computer architecture. Some of my projects are
           showcased below.
           I also enjoy staying active through working out and spending some free time with video games. 
-          Some of my favorites include Rust, Overwatch, Tropico, Minecraft, and 7 Days to Die.
+          Some of my favorites include Rust, Overwatch, Minecraft, and 7D2D.
         </p>
     </div>
 
