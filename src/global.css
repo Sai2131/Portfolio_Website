@@ -4,7 +4,7 @@
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .blur .accordion-item,
@@ -13,7 +13,7 @@
 .blur .accordion-body {
   background: transparent !important;
   border: none !important;
-  color: white !important;
+  color: rgb(0, 0, 0) !important;
 }
 
 .blur .accordion-button::after {

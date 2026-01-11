@@ -33,18 +33,20 @@ function Homepage() {
                     </Col>
                 </Row>
 
-                <div className='text-light border mt-5 border border-5 border-dark rounded blur'>
+                <div className='border mt-5 border border-5 border-dark rounded blur'>
 
                     <h2 className='text-center' >Projects</h2>
                     <Row className='mb-4 mt-4'>
                         <Col className="d-flex justify-content-center">
                             <ProjectCard Title={"Chaptre"} Desc={"A platform to share stories in incremental chapters for people to read and give feedback."} Page={"/chaptre"} Img={chaptreIcon} />
                         </Col>
-                                                <Col className="d-flex justify-content-center">
+                        
+                        <Col className="d-flex justify-content-center">
                             <ProjectCard Title={"cRegex"} Desc={"Regular expression library for C designed to be easy to use."} Page={"/regexengine"} Img={cRegexIcon}/>
                         </Col>
+
                         <Col className="d-flex justify-content-center">
-                            <ProjectCard Title={"HTTP Webserver"} Desc={"A Multithreaded HTTP 1.1 Webserver made with pthreads and unix sockets"} Page={"/httpserver"} Img={serverIcon} />
+                            <ProjectCard Title={"IR Code Generator / Compiler"} Desc={"Compiles a subset of the C language into IR (A form of code similar to assembly)"} Page={"/compiler"} Img={compilerIcon}/>
                         </Col>
 
                     </Row>
@@ -53,9 +55,11 @@ function Homepage() {
                         <Col className="d-flex justify-content-center">
                             <ProjectCard Title={"Distributed Key Value Store"} Desc={"Stores Key Value pairs in a distributed network of nodes for better fault tolerance, avaliability and throughput"} Page={"/kvs"} Img={distributedIcon} />
                         </Col>
-                                                <Col className="d-flex justify-content-center">
-                            <ProjectCard Title={"IR Code Generator / Compiler"} Desc={"Compiles a subset of the C language into IR (A form of code similar to assembly)"} Page={"/compiler"} Img={compilerIcon}/>
+
+                        <Col className="d-flex justify-content-center">
+                            <ProjectCard Title={"HTTP Webserver"} Desc={"A Multithreaded HTTP 1.1 Webserver made with pthreads and unix sockets"} Page={"/httpserver"} Img={serverIcon} />
                         </Col>
+
                         <Col className="d-flex justify-content-center">
                             <ProjectCard Title={"BananaSlug Game Emulator"} Desc={"Emulator made for a virtual game console called the Banana Slug"} Img={EmulatorIcon} Page={"/emulator"}/>
                         </Col>

@@ -13,36 +13,37 @@ export function Education() {
   };
 
   return ( 
-    <div className="text-center fs-8 w-80 mt-5 text-light border border border-5 border-dark rounded blur">
+    <div className="text-center fs-8 w-80 mt-5 border border border-5 border-dark rounded blur">
 
-        <h3>Education </h3>
+        <h3 className='text-light'>Education</h3>
 
         <Accordion activeKey={activeKey} onSelect={handleSelect}>
         <Accordion.Item eventKey="0">
             <Accordion.Header>
                 <img src={UCSCLogo} alt="icon" className="me-2" style={{ width: '30px' }} /> 
-                University of California, Santa Cruz - Computer Science B.S.
+                <div className='text-light'>University of California, Santa Cruz - Computer Science B.S.</div>
             </Accordion.Header>
             <Accordion.Body className='text-start'>
-              Started my Computer Science degree in Fall 2022 and currently a senior. Some of my favorite courses I took were:
+              <div className='text-light'>
+              September 2022 - December 2025
               <br></br>
-              <ul>
-                <li> Distributed Systems (138) </li>
-                <li> Compilers (110A) </li>
-                <li> Computer Architechure (120) </li>
-                <li> System Design (130) </li>
-                <li> Theory of Computation (103) </li>
+              GPA: 3.82 / 4.0
+              <br></br>
+              <br></br>
+              Notable Coursework:
+              <br></br>
+              </div>
+              <ul className='text-light'>
+                <li> Distributed Systems (CSE 138) </li>
+                <li> Operating Systems (CSE 134) </li>
+                <li> Database Systems (CSE 180) </li>
+                <li> Compilers (CSE 110A) </li>
+                <li> Computer Architechure (CSE 120) </li>
+                <li> Software Development (CSE 115A) </li>
+                <li> Theory of Computation (CSE 103) </li>
+                <li> Data Structures / Algorithm Analysis (CSE 101 & CSE 102) </li>
               </ul>
-            </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="1">
-            <Accordion.Header>
-                <img src={FHSLogo} alt="icon" className="me-2" style={{ width: '30px' }} /> 
-                Frisco High School (Frisco, TX)
-            </Accordion.Header>
-            <Accordion.Body className='text-start'>
-            This is where my interest in computer science began. In my softphmore year I took my first ever programming class
-            and I remember how facisinating it was to see what programming was capable of.
+      
             </Accordion.Body>
         </Accordion.Item>
         </Accordion>

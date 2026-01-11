@@ -2,6 +2,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import CompilerDiagram from '../assets/CompilerDiagram.jpeg'
 import Container from 'react-bootstrap/Container';
+import GithubIcon from '../assets/githubicon.svg'
 
 function CompilerProject() {
 
@@ -34,14 +35,24 @@ function CompilerProject() {
                   <br></br>
                   <br></br>
 
-                  This is a school project but I am currently developing a more complex compiler in C++ for a more feature rich language, targeting real x86 or ARM assembly.
+                  This is a school project but I am currently developing a more complex compiler in C++ for a more feature rich language, targeting real x86 or ARM assembly, the repo for which is below.
                 </p1>
             </Col>
             <Col>
                 <img src={CompilerDiagram} alt="Compiler Diagram" className='ratio ratio-1x1 w-100 border border border-5 border-dark'/> 
             </Col>
         </Row>
+
+            <div className='m-3'>
+              <h3>
+                <img src={GithubIcon} alt="icon" className="me-2" style={{ width: '30px' }} /> 
+                <a className="text-danger" href={"https://github.com/Sai2131/MiniC-Compiler"}>Source Code for newer version</a>
+              </h3>
+            </div>
+        
       </Container>
+
+      
   )
 }
 
