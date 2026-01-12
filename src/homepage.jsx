@@ -35,7 +35,7 @@ function Homepage() {
 
                 <div className='border mt-5 border border-5 border-dark rounded blur'>
 
-                    <h2 className='text-center' >Projects</h2>
+                    <h2 className='text-center text-light' >Projects</h2>
                     <Row className='mb-4 mt-4'>
                         <Col className="d-flex justify-content-center">
                             <ProjectCard Title={"Chaptre"} Desc={"A platform to share stories in incremental chapters for people to read and give feedback."} Page={"/chaptre"} Img={chaptreIcon} />
