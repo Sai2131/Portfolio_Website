@@ -1,52 +1,41 @@
-import Accordion from 'react-bootstrap/Accordion';
-import { useState } from 'react';
-import UCSCLogo from '../assets/UC_Seal.png'
-import FHSLogo from '../assets/FHS.png'
-import '../global.css'
+import UCSCLogo from '../assets/UC_Seal.png';
+import UVALogo from '../assets/UVA.png';
+import '../global.css';
 
 export function Education() {
+  return (
+    <div className="text-start fs-8 w-80 mt-5 p-4 border border-1 border-dark rounded blur">
+      <h3 className='text-light text-center mb-4'>Education</h3>
 
-  const [activeKey, setActiveKey] = useState("0");
-  const handleSelect = (eventKey) => {
-    if (eventKey === null) return;
-    setActiveKey(eventKey);
-  };
+      <div className="mb-4 ps-2">
+        <div className="d-flex align-items-center mb-1">
+          <img src={UVALogo} alt="UVA Logo" className="me-3" style={{ width: '30px' }} />
+          <h5 className="text-light mb-0 fw-bold">University of Virginia</h5>
+        </div>
+        <div className="text-light ps-5 ms-1">
+          <div className="fw-semibold">Master of Science in Computer Science</div>
+          <div className="opacity-75 small">August 2026 - May 2028 (Expected) | Charlottesville, VA</div>
+        </div>
+      </div>
 
-  return ( 
-    <div className="text-center fs-8 w-80 mt-5 border border border-5 border-dark rounded blur">
+      <hr className="text-light opacity-25" />
 
-        <h3 className='text-light'>Education</h3>
-
-        <Accordion activeKey={activeKey} onSelect={handleSelect}>
-        <Accordion.Item eventKey="0">
-            <Accordion.Header>
-                <img src={UCSCLogo} alt="icon" className="me-2" style={{ width: '30px' }} /> 
-                <div className='text-light'>University of California, Santa Cruz - Computer Science B.S.</div>
-            </Accordion.Header>
-            <Accordion.Body className='text-start'>
-              <div className='text-light'>
-              September 2022 - December 2025
-              <br></br>
-              GPA: 3.82 / 4.0
-              <br></br>
-              <br></br>
-              Notable Coursework:
-              <br></br>
-              </div>
-              <ul className='text-light'>
-                <li> Distributed Systems (CSE 138) </li>
-                <li> Operating Systems (CSE 134) </li>
-                <li> Database Systems (CSE 180) </li>
-                <li> Compilers (CSE 110A) </li>
-                <li> Computer Architechure (CSE 120) </li>
-                <li> Software Development (CSE 115A) </li>
-                <li> Theory of Computation (CSE 103) </li>
-                <li> Data Structures / Algorithm Analysis (CSE 101 & CSE 102) </li>
-              </ul>
-      
-            </Accordion.Body>
-        </Accordion.Item>
-        </Accordion>
+      <div className="mt-4 ps-2">
+        <div className="d-flex align-items-center mb-1">
+          <img src={UCSCLogo} alt="UCSC Logo" className="me-3" style={{ width: '30px' }} />
+          <h5 className="text-light mb-0 fw-bold">University of California, Santa Cruz</h5>
+        </div>
+        <div className="text-light ps-5 ms-1">
+          <div className="fw-semibold">Bachelor of Science in Computer Science</div>
+          <div className="opacity-75 small">September 2022 - December 2025 | Santa Cruz, CA | GPA: 3.82 / 4.0</div>
+          
+          <div className="mt-3">
+            <p className="mb-1 small">
+              <strong>Notable Coursework:</strong> Distributed Systems, Operating Systems, Database Systems, Compilers, Computer Architecture, Software Development, Theory of Computation, Data Structures & Algorithm Analysis.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }

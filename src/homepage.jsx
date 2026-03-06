@@ -33,7 +33,7 @@ function Homepage() {
                     </Col>
                 </Row>
 
-                <div className='border mt-5 border border-5 border-dark rounded blur'>
+                <div className='border mt-5 border border-1 border-dark rounded blur'>
 
                     <h2 className='text-center text-light' >Projects</h2>
                     <Row className='mb-4 mt-4'>

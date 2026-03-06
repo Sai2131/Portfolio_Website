@@ -1,4 +1,4 @@
-const LINKEDINURL = "https://www.linkedin.com/in/sai-tarra-9563a9238/"
+const LINKEDINURL = "https://www.linkedin.com/in/sai2131/"
 const EMAIL  = "sai2131@icloud.com"
 const PHONE = "(469)-428-3133"
 
@@ -12,6 +12,8 @@ export function Header() {
         <a className="text-decoration-none" href={LINKEDINURL}>LinkedIn</a>
         <a className="text-decoration-none" href={`mailto:${EMAIL}`}>{EMAIL}</a>
         <a className="text-decoration-none" href={`tel:+1${PHONE.replace("()-+", "")}`}>{PHONE}</a>
+
+        <a  className="text-decoration-none" href="/Portfolio_Website/Resume.pdf" target="_blank" rel="noreferrer" > Resume </a>
       </div>
       </div>
 
