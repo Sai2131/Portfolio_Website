@@ -13,8 +13,8 @@ export function Experience() {
         </div>
         
         <div className="text-light ps-5 ms-1">
-          <div className="fw-semibold">AI Training (Software Engineering) (Remote)</div>
-          <div className="opacity-75 small mb-3">March 2024 - June 2025</div>
+          <div className="fw-semibold">AI Training (Software Engineering)</div>
+          <div className="opacity-75 small mb-3">March 2024 - June 2025 | Remote</div>
 
           <ul className="small">
             <li className="mb-2">

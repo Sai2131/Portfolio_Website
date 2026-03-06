@@ -35,15 +35,15 @@ function Homepage() {
                         </Col>
                         
                         <Col md={6} lg={4} className="d-flex justify-content-center">
-                            <ProjectCard Title={"cRegex"} Desc={"Regular expression library for C designed to be easy to use and highly efficient."} Page={"/regexengine"} />
+                            <ProjectCard Title={"cRegex"} Desc={"Regular expression library written in C, for C designed to be easy to use."} Page={"/regexengine"} />
                         </Col>
 
                         <Col md={6} lg={4} className="d-flex justify-content-center">
-                            <ProjectCard Title={"IR Code Generator"} Desc={"A compiler frontend that translates a subset of C into intermediate representation (IR) similar to assembly."} Page={"/compiler"} />
+                            <ProjectCard Title={"IR Code Generator"} Desc={"A compiler that translates a subset of C into intermediate representation (IR) similar to assembly."} Page={"/compiler"} />
                         </Col>
 
                         <Col md={6} lg={4} className="d-flex justify-content-center">
-                            <ProjectCard Title={"Distributed Key-Value Store"} Desc={"High-availability storage system distributed across multiple nodes for fault tolerance and throughput."} Page={"/kvs"} />
+                            <ProjectCard Title={"Distributed Key-Value Store"} Desc={"High availability storage system distributed across multiple nodes for fault tolerance and throughput."} Page={"/kvs"} />
                         </Col>
 
                         <Col md={6} lg={4} className="d-flex justify-content-center">
@@ -51,7 +51,7 @@ function Homepage() {
                         </Col>
 
                         <Col md={6} lg={4} className="d-flex justify-content-center">
-                            <ProjectCard Title={"BananaSlug Emulator"} Desc={"A full emulator for the Banana Slug virtual game console, featuring custom instruction set support."} Page={"/emulator"}/>
+                            <ProjectCard Title={"BananaSlug Emulator"} Desc={"A virtual emulator for a virtual game console, featuring custom instruction set support."} Page={"/emulator"}/>
                         </Col>
                     </Row>
                 </div>
