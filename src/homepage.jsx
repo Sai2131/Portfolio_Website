@@ -9,69 +9,56 @@ import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
 
-import compilerIcon from './assets/CompilerCover.jpeg'
-import distributedIcon from './assets/DistributedIcon.png'
-import chaptreIcon from './assets/ChaptreLogo.png'
-import serverIcon from './assets/HTTPserverIcon.png'
-import cRegexIcon from './assets/cRegexIcon.png'
-import EmulatorIcon from './assets/controller.png'
-
 function Homepage() {
 
     return (
-        <>
+        <div className="py-5">
             <Header />
 
-            <Container>
+            <Container className="mt-5">
                 <AboutMe />
-                <Row>
-                    <Col className="d-flex">
+                <Row className="g-4 mt-2">
+                    <Col lg={6} className="d-flex">
                         <div className="equal-height w-100"><Education /></div>
                     </Col>
-                    <Col className="d-flex">
+                    <Col lg={6} className="d-flex">
                         <div className="equal-height w-100"><Experience /></div>
                     </Col>
                 </Row>
 
-                <div className='border mt-5 border border-1 border-dark rounded blur'>
-
-                    <h2 className='text-center text-light' >Projects</h2>
-                    <Row className='mb-4 mt-4'>
-                        <Col className="d-flex justify-content-center">
-                            <ProjectCard Title={"Chaptre"} Desc={"A platform to share stories in incremental chapters for people to read and give feedback."} Page={"/chaptre"} Img={chaptreIcon} />
+                <div className='mt-5 p-4 border-0 rounded blur'>
+                    <h2 className='text-center mb-5 text-uppercase tracking-wider' style={{ letterSpacing: '2px' }}>Featured Projects</h2>
+                    
+                    <Row className='g-4'>
+                        <Col md={6} lg={4} className="d-flex justify-content-center">
+                            <ProjectCard Title={"Chaptre"} Desc={"A platform to share stories in incremental chapters for people to read and give feedback."} Page={"/chaptre"} />
                         </Col>
                         
-                        <Col className="d-flex justify-content-center">
-                            <ProjectCard Title={"cRegex"} Desc={"Regular expression library for C designed to be easy to use."} Page={"/regexengine"} Img={cRegexIcon}/>
+                        <Col md={6} lg={4} className="d-flex justify-content-center">
+                            <ProjectCard Title={"cRegex"} Desc={"Regular expression library for C designed to be easy to use and highly efficient."} Page={"/regexengine"} />
                         </Col>
 
-                        <Col className="d-flex justify-content-center">
-                            <ProjectCard Title={"IR Code Generator / Compiler"} Desc={"Compiles a subset of the C language into IR (A form of code similar to assembly)"} Page={"/compiler"} Img={compilerIcon}/>
+                        <Col md={6} lg={4} className="d-flex justify-content-center">
+                            <ProjectCard Title={"IR Code Generator"} Desc={"A compiler frontend that translates a subset of C into intermediate representation (IR) similar to assembly."} Page={"/compiler"} />
                         </Col>
 
-                    </Row>
-
-                    <Row className='mb-4 mt-4'>
-                        <Col className="d-flex justify-content-center">
-                            <ProjectCard Title={"Distributed Key Value Store"} Desc={"Stores Key Value pairs in a distributed network of nodes for better fault tolerance, avaliability and throughput"} Page={"/kvs"} Img={distributedIcon} />
+                        <Col md={6} lg={4} className="d-flex justify-content-center">
+                            <ProjectCard Title={"Distributed Key-Value Store"} Desc={"High-availability storage system distributed across multiple nodes for fault tolerance and throughput."} Page={"/kvs"} />
                         </Col>
 
-                        <Col className="d-flex justify-content-center">
-                            <ProjectCard Title={"HTTP Webserver"} Desc={"A Multithreaded HTTP 1.1 Webserver made with pthreads and unix sockets"} Page={"/httpserver"} Img={serverIcon} />
+                        <Col md={6} lg={4} className="d-flex justify-content-center">
+                            <ProjectCard Title={"HTTP Webserver"} Desc={"Multithreaded HTTP 1.1 server implemented with POSIX threads and Unix sockets for high concurrency."} Page={"/httpserver"} />
                         </Col>
 
-                        <Col className="d-flex justify-content-center">
-                            <ProjectCard Title={"BananaSlug Game Emulator"} Desc={"Emulator made for a virtual game console called the Banana Slug"} Img={EmulatorIcon} Page={"/emulator"}/>
+                        <Col md={6} lg={4} className="d-flex justify-content-center">
+                            <ProjectCard Title={"BananaSlug Emulator"} Desc={"A full emulator for the Banana Slug virtual game console, featuring custom instruction set support."} Page={"/emulator"}/>
                         </Col>
                     </Row>
                 </div>
-
-
             </Container>
 
             <Footer />
-
-        </>
+        </div>
     )
 }
 

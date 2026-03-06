@@ -2,10 +2,13 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Gameplay from '../assets/emulatorgameplay.gif'
+import { BackButton } from '../components/BackButton.jsx'
+
 function Emulator() {
 
   return ( 
       <Container className='text-light mt-5'>
+        <BackButton />
         <Row>
           <Col>
             <h1>BananaSlug Emulator</h1>
@@ -50,11 +53,10 @@ function Emulator() {
             </p1>
           </Col>
 
-            <Col>
-                <img src={Gameplay} alt="Gameplay GIF" className='ratio ratio-1x1 w-100 border border border-5 border-dark'/> 
-            </Col>
-        </Row>
-      </Container>
+          <Col>
+              <img src={Gameplay} alt="Gameplay GIF" className='w-100 rounded-3'/> 
+          </Col>
+          </Row>      </Container>
   )
 }
 

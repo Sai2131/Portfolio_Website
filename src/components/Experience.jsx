@@ -3,8 +3,8 @@ import '../global.css';
 
 export function Experience() {
   return (
-    <div className="text-start fs-8 w-80 mt-5 p-4 border border-1 border-dark rounded blur">
-      <h3 className='text-light text-center mb-4'>Experience</h3>
+    <div className="text-start fs-8 w-80 mt-5 p-4 border-0 rounded blur shadow-sm">
+      <h3 className='text-light text-center mb-4 text-uppercase tracking-wider' style={{ letterSpacing: '1px' }}>Experience</h3>
 
       <div className="mb-4 ps-2">
         <div className="d-flex align-items-center mb-1">

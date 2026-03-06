@@ -4,11 +4,13 @@ import ChaptreHomepage from '../assets/ChaptreHomepage.png'
 import Chaptre2 from '../assets/Chaptre-2.png'
 import Chaptre3 from '../assets/Chaptre-3.png'
 import GithubIcon from '../assets/githubicon.svg'
+import { BackButton } from '../components/BackButton.jsx'
 
 function Chaptre() {
 
   return ( 
       <Container className='text-light mt-5 mb-5'>
+            <BackButton />
             <h1>Chaptre</h1>
             
             <Carousel className='mb-3 mt-3'>
@@ -63,7 +65,7 @@ function Chaptre() {
             <div className='m-3'>
               <h3>
                 <img src={GithubIcon} alt="icon" className="me-2" style={{ width: '30px' }} /> 
-                <a className="text-danger" href={"https://github.com/kgsoltan/Chaptre"}>Source code</a>
+                <a href={"https://github.com/kgsoltan/Chaptre"}>Source code</a>
               </h3>
             </div>
           

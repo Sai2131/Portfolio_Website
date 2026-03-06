@@ -5,18 +5,17 @@ const PHONE = "(469)-428-3133"
 export function Header() {
 
   return (
-    <>
-      <div className="text-center fs-5">
-        <h1 className="mt-3 text-white">Sai Tarra</h1>
-        <div className="d-flex justify-content-center gap-3 fst-italic">
-        <a className="text-decoration-none" href={LINKEDINURL}>LinkedIn</a>
-        <a className="text-decoration-none" href={`mailto:${EMAIL}`}>{EMAIL}</a>
-        <a className="text-decoration-none" href={`tel:+1${PHONE.replace("()-+", "")}`}>{PHONE}</a>
-
-        <a  className="text-decoration-none" href="/Portfolio_Website/Resume.pdf" target="_blank" rel="noreferrer" > Resume </a>
+    <div className="text-center py-4">
+      <h1 className="display-4 fw-bold mb-3 tracking-tight" style={{ color: '#f8fafc' }}>Sai Tarra</h1>
+      <div className="d-flex justify-content-center align-items-center gap-4 flex-wrap">
+        <a className="text-decoration-none fw-medium" href={LINKEDINURL}>LinkedIn</a>
+        <span className="text-secondary opacity-50 d-none d-md-inline">•</span>
+        <a className="text-decoration-none fw-medium" href={`mailto:${EMAIL}`}>{EMAIL}</a>
+        <span className="text-secondary opacity-50 d-none d-md-inline">•</span>
+        <a className="text-decoration-none fw-medium" href={`tel:+1${PHONE.replace("()-+", "")}`}>{PHONE}</a>
+        <span className="text-secondary opacity-50 d-none d-md-inline">•</span>
+        <a className="text-decoration-none fw-bold text-info" href="/Portfolio_Website/Resume.pdf" target="_blank" rel="noreferrer" >Resume</a>
       </div>
-      </div>
-
-    </>
+    </div>
   )
 }

@@ -2,10 +2,13 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import kvsdiag from '../assets/kvsdiag.jpg'
+import { BackButton } from '../components/BackButton.jsx'
+
 function KVSProject() {
 
   return ( 
       <Container className='text-light mt-5'>
+        <BackButton />
         <Row>
             <Col>
                 <Col>
@@ -59,7 +62,7 @@ function KVSProject() {
               </Col>
             </Col>
             <Col>
-                <img src={kvsdiag} alt="KVS Diagram" className='ratio ratio-1x1 w-100 border border border-5 border-dark'/> 
+                <img src={kvsdiag} alt="KVS Diagram" className='w-100 rounded-3'/> 
             </Col>
         </Row>
       </Container>

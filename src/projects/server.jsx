@@ -1,9 +1,12 @@
 import Container from 'react-bootstrap/Container';
 import webservedemo from '../assets/Webserver-demo.mp4'
+import { BackButton } from '../components/BackButton.jsx'
+
 function Server() {
 
   return ( 
       <Container className='text-light mt-5'> 
+          <BackButton />
           <h1>Multi-Threaded HTTP Server in C</h1>
 
                           <video
@@ -12,7 +15,7 @@ function Server() {
                   loop
                   muted
                   playsInline
-                  className="w-100 border border-5 border-dark mt-3 mb-4"
+                  className="w-100 rounded-3 mt-3 mb-4"
                 />
 
           <div className='mb-5'>

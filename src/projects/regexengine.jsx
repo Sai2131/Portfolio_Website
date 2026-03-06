@@ -3,11 +3,13 @@ import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import RegexDiag from '../assets/RegexDiag.1.jpeg'
 import GithubIcon from '../assets/githubicon.svg'
+import { BackButton } from '../components/BackButton.jsx'
 
 function Regexengine() {
 
   return ( 
       <Container className='text-light mt-5'>
+        <BackButton />
         <Row>
           <Col>
             <h1>cRegex</h1>
@@ -33,15 +35,14 @@ function Regexengine() {
               and educational value.
             </p1>
           </Col>
-            <Col>
-                <img src={RegexDiag} alt="Regex Diagram" className='ratio ratio-1x1 w-100 border border border-5 border-dark'/> 
-            </Col>
-        </Row>
-
+          <Col>
+              <img src={RegexDiag} alt="Regex Diagram" className='w-100 rounded-3'/> 
+          </Col>
+          </Row>
         <div className='m-3'>
           <h3>
             <img src={GithubIcon} alt="icon" className="me-2" style={{ width: '30px' }} /> 
-            <a className="text-danger" href={"https://github.com/Sai2131/cRegex"}>Source code</a>
+            <a href={"https://github.com/Sai2131/cRegex"}>Source code</a>
           </h3>
         </div>
 

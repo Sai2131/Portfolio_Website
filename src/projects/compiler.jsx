@@ -3,11 +3,13 @@ import Row from 'react-bootstrap/Row';
 import CompilerDiagram from '../assets/CompilerDiagram.jpeg'
 import Container from 'react-bootstrap/Container';
 import GithubIcon from '../assets/githubicon.svg'
+import { BackButton } from '../components/BackButton.jsx'
 
 function CompilerProject() {
 
   return ( 
       <Container className='text-light mt-5'>
+        <BackButton />
         <Row>
             <Col>
                 <h1>IR Code Generator / Compiler</h1>
@@ -39,14 +41,14 @@ function CompilerProject() {
                 </p1>
             </Col>
             <Col>
-                <img src={CompilerDiagram} alt="Compiler Diagram" className='ratio ratio-1x1 w-100 border border border-5 border-dark'/> 
+                <img src={CompilerDiagram} alt="Compiler Diagram" className='w-100 rounded-3'/> 
             </Col>
         </Row>
 
             <div className='m-3'>
               <h3>
                 <img src={GithubIcon} alt="icon" className="me-2" style={{ width: '30px' }} /> 
-                <a className="text-danger" href={"https://github.com/Sai2131/MiniC-Compiler"}>Source Code for newer version</a>
+                <a href={"https://github.com/Sai2131/MiniC-Compiler"}>Source Code for newer version</a>
               </h3>
             </div>
         
